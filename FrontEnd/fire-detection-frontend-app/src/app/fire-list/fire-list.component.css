@@ -1,0 +1,15 @@
+.fire-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .fire-table th, .fire-table td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  .fire-table th {
+    background-color: #f2f2f2;
+  }
+  

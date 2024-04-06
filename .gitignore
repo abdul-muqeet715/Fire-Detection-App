@@ -1,0 +1,11 @@
+
+# ingore the env files
+.env 
+
+# ignore the node_modules
+node_modules
+
+#ignore the vidoes
+/Vidoes
+.mp4
+.vid

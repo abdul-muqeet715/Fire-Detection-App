@@ -1,0 +1,25 @@
+<table class="fire-table">
+    <thead>
+      <tr>
+        <th>Location</th>
+        <th>Start Time</th>
+        <th>End Time</th>
+        <th>Duration</th>
+        <th>Mobile Number</th>
+        <th>Map View</th>
+        <th>Video URL</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let incident of fireIncidents">
+        <td>{{ incident.location }}</td>
+        <td>{{ incident.startTime }}</td>
+        <td>{{ incident.endTime }}</td>
+        <td>{{ incident.duration }}</td>
+        <td>{{ incident.mobileNumber }}</td>
+        <td><a href="#" (click)="openMap(incident.latitude,incident.longitude)">View on Map</a></td>
+        <td><button (click)="openVideo(incident.videoUrl)">Watch Video</button></td>
+      </tr>
+    </tbody>
+  </table>
+  
